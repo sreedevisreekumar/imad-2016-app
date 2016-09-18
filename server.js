@@ -23,7 +23,7 @@ content:`<p>
 var htmlTemplate=`<html>
     <head>
         <title>
-            Article Three
+            ${title}
         </title>
         <meta name="viewport" content="width-device-width,initial-scale=1"/>
         <link href="/ui/style.css" rel="stylesheet" />
@@ -34,15 +34,13 @@ var htmlTemplate=`<html>
         </div>
         <hr/>
         <h3>
-            Article Three
+            ${heading}
         </h3>
         <div>
-            Sep 15,2016
+           ${date}
         </div>
         <div>
-            <p>
-                This is the content for my third article.
-            </p>
+           ${content}
         </div>
     </body>
 </html>`;
