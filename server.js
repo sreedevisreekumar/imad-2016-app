@@ -6,13 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-   articleOne={
-title:'Artiicle One',
-heading:'Article One',
-date:'Sep5,2016',
-content:`<p>
+   articleOne:{
+                title:'Artiicle One',
+                heading:'Article One',
+                date:'Sep5,2016',
+                content:`<p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-            </p>
+               </p>
             <p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
             </p>
@@ -20,6 +20,20 @@ content:`<p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
             </p>`
 },
+   articleTwo:{
+                title:'Artiicle Two',
+                heading:'Article Two',
+                date:'Sep10,2016',
+                content:`<p>
+                This is the content for my second article.
+                </p>`
+              },
+   articleThree:{
+            title:'Artiicle Three',
+            heading:'Article Three',
+            date:'Sep15,2016',
+            content:`<p>This is the content for my third article.</p>`
+            }
 };
 function createTemplate(data){
     var title=data.title;
