@@ -6,21 +6,21 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-   articleOne:{
+   'article-one':{
                 title:'Article One',
                 heading:'Article One',
                 date:'Sep5,2016',
                 content:`<p>
+                This is the content for my first article.This is the content for my first article.This is the content for my first arti.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
+               </p>
+               <p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
                </p>
-            <p>
+              <p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-            </p>
-            <p>
-                This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-            </p>`
-},
-   articleTwo:{
+              </p>`
+                },
+   'article-two':{
                 title:'Article Two',
                 heading:'Article Two',
                 date:'Sep10,2016',
@@ -28,7 +28,7 @@ var articles={
                 This is the content for my second article.
                 </p>`
               },
-   articleThree:{
+   'article-three':{
             title:'Article Three',
             heading:'Article Three',
             date:'Sep15,2016',
