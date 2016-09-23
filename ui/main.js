@@ -11,6 +11,10 @@ imgMadi.style.marginLeft="0px";
 function moveRight(){
     marginLeft=marginLeft+10;
     imgMadi.style.marginLeft=marginLeft  + 'px';
+    if(marginLeft==1200)
+    {
+        marginLeft=0;
+    }
 }
 imgMadi.onclick=function(){
     var interval=setInterval(moveRight,50);
