@@ -7,7 +7,7 @@ var element=document.getElementById("txtdiv");
 element.innerHTML="Hello world";
 imgMadi.style.marginLeft="0px";
 };
-int trip=0;
+
 function moveRight(){
     marginLeft=marginLeft+10;
     imgMadi.style.marginLeft=marginLeft  + 'px';
