@@ -18,7 +18,7 @@ var articles={
                </p>
               <p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-              </p>`
+                                                                              </p>`
                 },
    'article-two':{
                 title:'Article Two',
