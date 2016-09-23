@@ -21,4 +21,19 @@ function moveRight(){
 }
 imgMadi.onclick=function(){
     var interval=setInterval(moveRight,50);
+};
+
+
+<script>
+function start(d){
+    if (d.interval){
+        clearInterval(d.interval);
+        d.innerHTML='Start';
+    } else {
+        d.interval=setInterval(function(){
+          //refresh here
+        },10000);
+        d.innerHTML='Stop';
+    }
 }
+</script>
