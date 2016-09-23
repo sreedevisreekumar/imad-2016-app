@@ -29,6 +29,7 @@ function start(d){
     if (d.interval){
         clearInterval(d.interval);
         d.innerHTML='Start';
+        d.interval=null;
     } else {
         d.interval=setInterval(moveRight,50);
         d.innerHTML='Stop';
