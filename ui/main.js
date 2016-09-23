@@ -14,6 +14,7 @@ function moveRight(){
     if(marginLeft==1200)
     {
         marginLeft=0;
+        return;
     }
 }
 imgMadi.onclick=function(){
