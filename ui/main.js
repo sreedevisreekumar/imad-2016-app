@@ -1,4 +1,6 @@
 console.log('Loaded!');
+window.onload=function(){
 var element=document.getElementById("main-txt");
 element.innerHtml="Hello world!!!";
-console.log(element.innerHtml);
+alert(element.innerHtml);
+};
