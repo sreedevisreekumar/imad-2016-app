@@ -14,6 +14,8 @@ function moveRight(){
     imgMadi.style.marginLeft=marginLeft  + 'px';
     if(marginLeft==1200)
     {
+        marginLeft=0;
+       clearInterval(interval);
          return false;
     }
 }
