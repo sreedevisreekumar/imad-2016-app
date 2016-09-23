@@ -19,9 +19,9 @@ function moveRight(){
          return false;
     }
 }
-imgMadi.onclick=function(){
+/*imgMadi.onclick=function(){
     var interval=setInterval(moveRight,50);
-};
+};*/
 
 
 
