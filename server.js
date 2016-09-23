@@ -82,6 +82,9 @@ app.get('/favicon.ico', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+app.get('/ui/Office-Girl-icon.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Office-Girl-icon.png'));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
