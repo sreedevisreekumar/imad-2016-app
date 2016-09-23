@@ -24,7 +24,7 @@ imgMadi.onclick=function(){
 };
 
 
-<script>
+
 function start(d){
     if (d.interval){
         clearInterval(d.interval);
@@ -36,4 +36,3 @@ function start(d){
         d.innerHTML='Stop';
     }
 }
-</script>
