@@ -1,7 +1,7 @@
 console.log('Loaded!');
 window.onload=function(){
 var element=document.getElementById("txtdiv");
-element.innerHtml="Hello world";
-alert(element.innerHtml);
+element.innerHTML="Hello world";
+alert(element.innerHTML);
 };
 var imgMadi=document.getElementById("madi");
