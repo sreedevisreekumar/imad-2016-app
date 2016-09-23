@@ -5,3 +5,5 @@ element.innerHtml="Hello world!!!";
 alert(element.innerHtml);
 element.hide();
 };
+var imgMadi=document.getElementById("madi");
+imgMadi.hide();
