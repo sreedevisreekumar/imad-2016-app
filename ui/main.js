@@ -30,7 +30,7 @@ function start(d){
         clearInterval(d.interval);
         d.innerHTML='Start';
     } else {
-        d.interval=setInterval(moveRight,10);
+        d.interval=setInterval(moveRight,50);
         d.innerHTML='Stop';
     }
 }
