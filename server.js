@@ -99,6 +99,9 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/ajaxreq.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ajaxreq.js'));
 });
+app.get('/ui/comment.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'comment.js'));
+});
 
 var counter=0;
 app.get('/counter', function (req, res) {
