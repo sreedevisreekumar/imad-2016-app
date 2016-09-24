@@ -4,7 +4,13 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var names=[];
+app.get('/submit-name/:name',function(req,res){//URL:/submit-name?name=xxxxx
+    //Get the name from the request
+    var name=req.params.name;
+    names.push(name);
+    res.send(JSON.stringify(names));//TODO
+});
 var articles={
    'article-one':{
                 title:'Article One',
@@ -91,13 +97,7 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/ajaxreq.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ajaxreq.js'));
 });
-var names=[];
-app.get('/submit-name/:name',function(req,res){//URL:/submit-name?name=xxxxx
-    //Get the name from the request
-    var name=req.params.name;
-    names.push(name);
-    res.send(JSON.stringify(names));//TODO
-});
+
 var counter=0;
 app.get('/counter', function (req, res) {
     counter=counter+1;
