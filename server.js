@@ -66,7 +66,7 @@ var htmlTemplate=`<html>
         <textarea rows="4" cols="50"id="txtComment"></textarea>
            <input type="submit" id="SubCmt" value="Submit"/>
            <ul id='commentlist'>
-                          </ul>
+            </ul>
         </div>
     </body>
 </html>`;
