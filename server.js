@@ -116,6 +116,14 @@ app.get('/submit-name',function(req,res){//URL:/submit-name?name=xxxxx
     names.push(name);
     res.send(JSON.stringify(names));//TODO
 });
+var cmnts=[];
+app.get('/submit-comment',function(req,res){//URL:/submit-name?name=xxxxx
+    //Get the name from the request
+    var cmnt=req.query.cmnt;
+    //console.log(name);
+    cmnts.push(cmnt);
+    res.send(JSON.stringify(cmnts));//TODO
+});
 app.get('/:articleName', function (req, res) {
     //articleName=article-one
     //articles[articleName]=={}content object for article one
