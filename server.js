@@ -63,7 +63,7 @@ var htmlTemplate=`<html>
            ${content}
         </div>
         <div>
-        <textarea rows="4" cols="50"id="txtComment"></textarea>
+        <textarea rows="4" cols="50"id="txtComment" placeholder="Comment"></textarea><br/>
            <input type="submit" id="SubCmt" value="Submit"/>
            <ul id='commentlist'>
             </ul>
