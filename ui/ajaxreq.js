@@ -7,6 +7,7 @@ btnClick.onclick=function(){
     
     
     //Capture the response and store in a variable
+    
     //Render the variable in the correct span
     counter=counter+1;
     var count=document.getElementById("count");
