@@ -4,13 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var names=[];
-app.get('/submit-name/:name',function(req,res){//URL:/submit-name?name=xxxxx
-    //Get the name from the request
-    var name=req.params.name;
-    names.push(name);
-    res.send(JSON.stringify(names));//TODO
-});
+
 var articles={
    'article-one':{
                 title:'Article One',
@@ -103,12 +97,18 @@ app.get('/counter', function (req, res) {
     counter=counter+1;
   res.send(counter.toString());
 });
-
+var names=[];
+app.get('/submit-name',function(req,res){//URL:/submit-name?name=xxxxx
+    //Get the name from the request
+    var name=req.params.name;
+    names.push(name);
+    res.send(JSON.stringify(names));//TODO
+});
 app.get('/:articleName', function (req, res) {
     //articleName=article-one
     //articles[articleName]=={}content object for article one
-   // var articleName=req.params.articleName;
-   // res.send(createTemplate(articles[articleName]));
+    var articleName=req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
   });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
