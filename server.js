@@ -68,6 +68,8 @@ var htmlTemplate=`<html>
            <ul id='commentlist'>
             </ul>
         </div>
+        <script type="text/javascript" src="/ui/comment.js">
+        </script>
     </body>
 </html>`;
 return htmlTemplate;
