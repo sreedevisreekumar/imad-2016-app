@@ -5,7 +5,7 @@ var counter =0;
 btnClick.onclick=function(){
     //Make a request to the counter endpoint
     var request=new XMLHttpRequest();
-    
+    console.log('button clicked');
     
     //Capture the response and store in a variable
     request.onreadystatechange=function(){
