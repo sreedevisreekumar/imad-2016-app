@@ -21,7 +21,7 @@ submitName.onclick=function(){
                 {
                     list+='<li>'+comments[i]+'</li>';
                 }
-                var ul=document.getElementById('namelist');
+                var ul=document.getElementById('commentlist');
                 ul.innerHTML=list;
             }
         }
